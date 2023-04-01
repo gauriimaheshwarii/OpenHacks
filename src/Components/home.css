@@ -1,0 +1,56 @@
+.home-container {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+.home-eco-container {
+    height: auto;
+    width: 100%;
+    z-index: -1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-eco-container h1 {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    color: white;
+    font-size: 4em;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.home-eco-container h1::before {
+    content: open-quote;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.home-eco-container h1::after {
+    content: close-quote;
+    margin-left: 10px;
+}
+
+.home-eco-img {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home-svg {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-top: -180px;
+    z-index: 1;
+}

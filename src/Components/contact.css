@@ -1,0 +1,196 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap'); */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+    margin-bottom: -340px;
+    padding-top: 100px;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: -1;
+}
+
+.contact-heading {
+    font-size: 5.4em;
+    background-color: rgb(0, 222, 52);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Shantell Sans', cursive;
+    position: relative;
+    display: block;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-child-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.contact-form-container {
+    height: 540px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    height: 540px;
+    width: 500px;
+    border-radius: 20px;
+    z-index: 99;
+    position: absolute;
+}
+
+.contact-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-form label {
+    font-family: 'Tilt Neon', cursive;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.contact-form label::after {
+    content: "*";
+    color: red;
+    padding: 0;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 0;
+}
+
+.contact-form input {
+    font-family: 'Tilt Neon', cursive;
+    background-color: transparent;
+    border: 0 solid transparent;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 5px 0;
+    color: black;
+    padding: 0 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+}
+
+.contact-form textarea {
+    font-family: 'Tilt Neon', cursive;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 100px;
+    width: 300px;
+    margin: 5px 0;
+    color: black;
+    padding: 0 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    /* text-align: center; */
+    resize: none;
+}
+
+.contact-form button {
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 10px 80px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.contact-form button:focus {
+    text-decoration: none;
+}
+
+.contact-form button:hover {
+    text-decoration: none;
+}
+
+.contact-form button:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+.contact-form button:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .contact-heading {
+        font-size: 4em;
+    }
+
+    .contact-form {
+        box-shadow: none;
+        background-color: white;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        border-radius: 0;
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .contact-form button {
+        padding: 12px 50px;
+    }
+
+}

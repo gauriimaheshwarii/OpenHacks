@@ -1,0 +1,189 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 40px;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    height: auto;
+    width: 100%;
+    z-index: 9999;
+    background-color: transparent;
+    transition: background-color .5s linear .2s;
+    transition: backdrop-filter .5s linear .2s;
+}
+
+.nav-heading-container {
+    margin: 0;
+    padding: 0;
+    font-size: 2.6em;
+    font-weight: bolder;
+}
+
+.nav-heading-span1 {
+    color: rgb(0, 222, 52);
+    margin-right: 4px;
+    padding: 0;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.nav-heading-span2 {
+    color: white;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.nav-links-account-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+}
+
+.nav-links-container {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0;
+    gap: 40px;
+}
+
+.nav-links-container span {
+    cursor: pointer;
+    text-align: left !important;
+    font-size: 11px !important;
+    letter-spacing: 0.2em !important;
+    font-family: "Basier Mono" !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    margin: 0;
+    padding-left: 0 !important;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 25px;
+    position: relative;
+}
+
+.nav-account-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-account-button-sign-in {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: 'Tilt Neon', cursive;
+  font-size: 1rem;
+  font-weight: normal;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.nav-account-button-sign-in:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.nav-account-button-sign-up {
+    all: unset;
+    /* width: 100px;
+    height: 30px; */
+    height: auto;
+    width: auto;
+    font-size: 1em;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.nav-account-button-sign-up::after,
+.nav-account-button-sign-up::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -9999;
+    transition: all .4s;
+}
+
+.nav-account-button-sign-up::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+}
+
+.nav-account-button-sign-up::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+.nav-account-button-sign-up:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+
+.nav-account-button-sign-up:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.nav-account-button-sign-up:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+
