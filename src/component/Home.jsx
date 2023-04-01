@@ -22,6 +22,13 @@ const Home = () => {
               environment. Earn points and get free deliverables and coupons for
               sending us your recyclable items.
             </p>
+
+            <blockquote class="blockquote mb-0">
+              <p>
+                “The best way to predict the future is to create it.” - Peter
+                Drucker
+              </p>
+            </blockquote>
           </div>
         </div>
       </div>

@@ -5,18 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
-import Products from "./component/Products";
-import Home from "./component/Home";
-import Navbar from "./component/NavBar";
-import { Switch, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-    <Navbar />
-    <Home />
-    <Products />
   </React.StrictMode>
 );
 

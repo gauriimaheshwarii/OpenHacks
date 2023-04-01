@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Skeleton from "react-loading-skeleton";
-
 const Products = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
@@ -43,8 +42,8 @@ const Products = () => {
     );
   };
   const filterProduct = (category) => {
-    const updatedLIst = data.filter((x) => x.category === category);
-    setFilter(updatedLIst);
+    const updatedList = data.filter((x) => x.category === category);
+    setFilter(updatedList);
   };
 
   const ShowProducts = () => {
@@ -97,9 +96,17 @@ const Products = () => {
                       {product.title.substring(0, 12)}
                     </h5>
                     <p class="card-text lead fw-bold">${product.price}</p>
-                    <a href="/" class="btn btn-outline-dark">
+                    <a
+                      href={`https://fakestoreapi.com/products/${product.id}`}
+                      class="btn btn-outline-dark"
+                    >
                       Buy Now
                     </a>
+                    <br></br>
+                    <hr></hr>
+                    <button className="btn btn-dark px-4 py-2">
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               </div>
