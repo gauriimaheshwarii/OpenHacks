@@ -1,4 +1,6 @@
-# Demo of the project https://ecocircle.netlify.app
+# Demo of the project : https://ecocircle.netlify.app
+
+# Backend of the project : https://github.com/apneduniya/ecocircle-backend/tree/main/demo
 
 # Getting Started with Create React App
 
