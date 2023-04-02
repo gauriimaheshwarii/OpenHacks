@@ -1,5 +1,6 @@
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0;
@@ -187,3 +188,17 @@ nav {
     transform: translate(0, 5%);
 }
 
+@media only screen and (max-width: 1200px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-heading-container {
+        font-size: 1.6;
+    }
+
+}
