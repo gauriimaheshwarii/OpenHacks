@@ -26,6 +26,7 @@
     color: white;
     font-size: 4em;
     font-family: 'Shantell Sans', cursive;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .home-eco-container h1::before {

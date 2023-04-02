@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './footer.css';
 
 const Footer = () => {
@@ -16,10 +17,10 @@ const Footer = () => {
                 </div>
                 <div className="footer-second-sub-column"> {/* Second Column of the Footer which contain Nav Links */}
                     <div className="footer-second-sub-column-nav-links-container">
-                        <a href="#home" className="footer-second-sub-column-nav-links" scroll={false}>Home</a>
-                        <a href="#skills" className="footer-second-sub-column-nav-links" scroll={false}>Store</a>
-                        <a href="#projects" className="footer-second-sub-column-nav-links" scroll={false}>Api</a>
-                        <a href="#about" className="footer-second-sub-column-nav-links" scroll={false}>Contact</a>
+                        <NavLink to="/" className="footer-second-sub-column-nav-links" style={{textDecoration: "none"}}>Home</NavLink>
+                        <NavLink to="/store" className="footer-second-sub-column-nav-links" style={{textDecoration: "none"}}>Store</NavLink>
+                        <NavLink to="/api" className="footer-second-sub-column-nav-links"style={{textDecoration: "none"}}>Api</NavLink>
+                        {/* <a href="#about" className="footer-second-sub-column-nav-links" scroll={false}>Contact</a> */}
                     </div>
                 </div>
             </footer>
