@@ -1,0 +1,38 @@
+
+.vision-container {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    padding: 60px 40px;
+    margin-top: -140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vision-description {
+    width: 600px;
+}
+
+.vision-description h3 {
+    font-size: 4em;
+    color: rgb(0, 222, 52);
+    font-family: 'Shantell Sans', cursive;
+    position: relative;
+    display: block;
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+.vision-description p {
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+    text-align: left;
+    margin: 0;
+    padding: 4px 0;
+}
